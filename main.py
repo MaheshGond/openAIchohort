@@ -49,7 +49,8 @@ app.include_router(webhook_router)
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
     try:
-        reply = get_persona_response(request.message)
+        # Use a dummy session id for testing
+        reply = get_persona_response(request.message, user_id="test-user")
         return {"reply": reply}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

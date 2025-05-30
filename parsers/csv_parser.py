@@ -7,7 +7,6 @@ def get_csv_persona_boost(topic: str, msg_type: str, difficulty: str, language: 
     messages_df = return_messges_df()
     filtered = messages_df[
         (messages_df["Topic"].str.lower() == topic.lower()) &
-        (messages_df["Message Type"].str.lower() == msg_type.lower()) &
         (messages_df["Difficulty"].str.lower() == difficulty.lower()) &
         (messages_df["Language"].str.lower() == language.lower())
         ]
