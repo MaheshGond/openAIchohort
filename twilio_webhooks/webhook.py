@@ -3,7 +3,7 @@ from fastapi.responses import PlainTextResponse
 from twilio.rest import Client as TwilioClient
 import os
 from dotenv import load_dotenv
-from apis.open_ai_apis import get_persona_response, generate_hitesh_intro,get_persona_system_prompt
+from apis.open_ai_apis import get_persona_response, generate_hitesh_intro, get_persona_system_prompt
 
 router = APIRouter()
 load_dotenv()
@@ -11,11 +11,12 @@ load_dotenv()
 # In-memory session tracking
 session_store = {}
 
+
 @router.post("/webhook")
 async def whatsapp_webhook(
-    request: Request,
-    Body: str = Form(...),
-    From: str = Form(...)
+        request: Request,
+        Body: str = Form(...),
+        From: str = Form(...)
 ):
     user_id = From
     twilio_client = TwilioClient(

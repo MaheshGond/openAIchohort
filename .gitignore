@@ -1,0 +1,75 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+.venv/
+.env/
+.ENV/
+ENV/
+.openAIcohort2/
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS and Linux
+.DS_Store
+*.egg-info/
+.eggs/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# Logs
+*.log
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Build artifacts
+build/
+dist/
+*.egg
+*.whl
+
+# Pip
+pip-log.txt
+
+# MyPy and other linting
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# flake8
+*.lint
+
+# dotenv
+*.env
+
+# Local databases
+*.sqlite3
+*.db
+
+# VS Code Python extension
+.python-version
+
+# AWS SAM / Serverless
+.aws-sam/
+.serverless/
+
+# Test output
+tests/output/
